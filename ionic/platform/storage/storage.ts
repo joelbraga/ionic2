@@ -28,7 +28,7 @@ export class Storage {
   remove(key) {
     return this._strategy.remove(key);
   }
-  query(query, params) {
+  query(query, ...params) {
     return this._strategy.query(query, params);
   }
 }
